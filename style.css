@@ -7,10 +7,10 @@ html {
 body {
     background: linear-gradient(
         30deg, 
-        rgb(0, 150, 141) 50%,
-        rgb(255, 150, 0) 50%,   
-        rgb(255, 150, 0) 55%,
-        rgb(243, 240, 221) 55%
+        rgba(0, 150, 141, 1) 50%,
+        rgba(255, 150, 0, 1) 50%,   
+        rgba(255, 150, 0, 1) 55%,
+        rgba(243, 240, 221, 1) 55%
     );
     font-size: 16px;
 }
@@ -83,7 +83,7 @@ em {
     text-align: center;
     font-size: 14px;
     font-weight: 400 !important;
-    color: rgb(35,35,35);
+    color: rgb(35,35,35)
 }
 #userName {
     text-align: center;
@@ -95,7 +95,7 @@ em {
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: auto;
-    background-color: rgba(35, 35, 35, .95);
+    background-color: rgba(242,242,242, .95);
     border-radius: 25px;
     padding: 25px 10px 25px 10px;
     margin: 15px 1% 15px 1%;
@@ -129,6 +129,7 @@ em {
     cursor: grab;
     font-weight: 300;
     color: white;
+    box-shadow: 2px 2px 0px rgba(35,35,35,.5);
 }
 .groupTableTeam:hover {
     margin: 2px;
@@ -448,8 +449,8 @@ em {
 }
 
 .knockout {
-    background-color: rgba(220, 220, 220, 1);
-    border-color: rgba(210, 210, 210, 1);
+    background-color: rgba(230, 230, 230, 1);
+    border-color: rgba(120, 120, 120, 1);
     border-width: 2px;
     border-style: solid;
     box-shadow: 5px 5px 0px rgba(25, 25, 25, .5);
@@ -458,6 +459,43 @@ em {
     margin: auto 5px auto 5px;
     text-align: center;
 }
+
+.kq {
+    background-color: rgba(220,220,220, 1);
+    border-color: rgba(120, 120, 120, 1);
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 5px 5px 0px rgba(25, 25, 25, .5);
+    border-radius: 15px;
+    padding: 5px;
+    margin: auto 5px auto 5px;
+    text-align: center;
+}
+
+.ks {
+    background-color: rgba(210, 210, 210, 1);
+    border-color: rgba(120, 120, 120, 1);
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 5px 5px 0px rgba(25, 25, 25, .5);
+    border-radius: 15px;
+    padding: 5px;
+    margin: auto 5px auto 5px;
+    text-align: center;
+}
+
+.kw {
+    background-color: rgba(200, 200, 200, 1);
+    border-color: rgba(120, 120, 120, 1);
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 5px 5px 0px rgba(25, 25, 25, .5);
+    border-radius: 15px;
+    padding: 5px;
+    margin: auto 5px auto 5px;
+    text-align: center;
+}
+
 #r16-left {
     height: 100%;
     grid-column: 2 / 3;
