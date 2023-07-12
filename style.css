@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+body {
+    background: linear-gradient(
+        30deg, 
+        rgb(0, 150, 141) 50%,
+        rgb(255, 150, 0) 50%,   
+        rgb(255, 150, 0) 55%,
+        rgb(243, 240, 221) 55%
+    );
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+ul li {
+    margin: 5px;
+    padding: 2.5px;
+    background-color: rgba(250, 250, 250, .65);
+    border-radius: 5px;
+}
+span {
+    font-weight: 600;
+    color: rgb(35,35,35);
+}
+img {
+    opacity: .6;
+}
+input {
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    border: 2px solid rgb(65,65,65);
+}
+
+em {
+    text-decoration: underline;
+}
+
+#header {
+    margin:  5px auto 5px auto;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    color: rgb(35,35,35);
+}
+#descr-text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400 !important;
+    margin: 25px;
+}
+#userName {
+    text-align: center;
+    font-size: 32px;
+}
+
+#bracket {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: auto;
+    background-color: rgba(65, 65, 65, .95);
+    border-radius: 25px;
+    padding: 25px 10px 25px 10px;
+    margin: 15px 1% 15px 1%;
+    align-content: center;
+    box-shadow: 10px 10px 0px rgba(5, 5, 5, .75);
+}
+.bracket-column {
+    margin: auto 5px auto 5px;
+    height: 100%;    
+}
+.group {
+    background-color: rgba(241, 240, 216, .9);
+    border-color: rgba(0, 150, 141,1);
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 5px 5px 0px rgba(25, 25, 25, .35);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px 5px 10px 5px;
+    text-align: center;
+}
+#group-stage-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+#group-stage-right {
+    grid-column: 10 / 11;
+    grid-row: 1 / 2;
+}
+.groupTableTeam {
+    cursor: grab;
+    font-weight: 300;
+    color: white;
+}
+.groupTableTeam:hover {
+    margin: 2px;
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, .65);
+}
+
+/*Group A Team Colors*/
+#NZL {
+    background: linear-gradient(
+        45deg,
+        rgb(250, 250, 250) 10%,
+        rgb(35, 31, 32) 10%, 
+        rgb(35, 31, 32) 90%, 
+        rgb(250, 250, 250) 90%
+    );
+}
+#NOR {
+    background: linear-gradient(
+        45deg,
+        rgb(0,46,106) 10%,
+        rgb(190, 15, 44) 10%, 
+        rgb(190, 15, 44) 90%, 
+        rgb(0,46,106) 90%
+    );
+}
+#PHI {
+    background: linear-gradient(
+        45deg,
+        rgb(0,53,159) 10%,
+        rgb(239,198,21) 10%, 
+        rgb(239,198,21) 90%, 
+        rgb(165,2,2) 90%
+    );
+}
+#SUI {
+    background: linear-gradient(
+        45deg,
+        rgb(250, 250, 250) 10%,
+        rgb(227, 33, 25) 10%, 
+        rgb(227, 33, 25) 90%, 
+        rgb(250, 250, 250) 90%
+    );
+}
+
+/*Group B Team Colors*/
+#AUS {
+    background: linear-gradient(
+        45deg,
+        rgb(24, 75, 54) 10%,
+        rgb(255, 208, 63) 10%, 
+        rgb(255, 208, 63) 90%, 
+        rgb(24, 75, 54) 90%
+    );
+}
+#IRL {
+    background: linear-gradient(
+        45deg,
+        rgb(255, 255, 255) 10%,
+        rgb(1, 146, 70) 10%, 
+        rgb(1, 146, 70) 90%, 
+        rgb(242, 115, 0) 90%
+    );
+}
+#NGA {
+    background: linear-gradient(
+        45deg,
+        rgb(242, 242, 242) 10%,
+        rgb(1, 128, 78) 10%, 
+        rgb(1, 128, 78) 90%, 
+        rgb(242, 242, 242) 90%
+    );
+}
+#CAN {
+    background: linear-gradient(
+        45deg,
+        rgb(242, 242, 242) 10%,
+        rgb(205, 6, 31) 10%, 
+        rgb(205, 6, 31) 90%, 
+        rgb(242, 242, 242) 90%
+    );
+}
+
+/*Group C Team Colors*/
+#ESP {
+    background: linear-gradient(
+        45deg,
+        rgb(250,189,0) 10%,
+        rgb(173,21, 25) 10%, 
+        rgb(173,21, 25) 90%, 
+        rgb(250,189,0) 90%
+    );
+}
+#CRC {
+    background: linear-gradient(
+        45deg,
+        rgb(0, 19, 130) 10%,
+        rgb(207,39,27) 10%, 
+        rgb(207,39,27) 90%, 
+        rgb(0, 19, 130) 90%
+    );
+}
+#ZAM {
+    background: linear-gradient(
+        45deg,
+        rgb(211, 30, 15) 10%,
+        rgb(24, 131, 0) 10%, 
+        rgb(24, 131, 0) 90%, 
+        rgb(227, 119, 0) 90%
+    );
+    background-color: rgb(24, 131, 0);
+}
+#JPN {
+    background: linear-gradient(
+        45deg,
+        rgb(178,0,43) 10%,
+        rgb(250, 250, 250) 10%, 
+        rgb(250, 250, 250) 90%, 
+        rgb(178,0,43) 90%
+    );
+    color: rgb(178,0,43);
+}
+
+/*Group D Team Colors*/
+#ENG {
+    background: linear-gradient(
+        45deg,
+        rgb(195, 16, 34) 10%,
+        rgb(242, 242, 242) 10%, 
+        rgb(242, 242, 242) 90%, 
+        rgb(195, 16, 34) 90%
+    );
+    color: rgb(195, 16, 34);
+}
+#DEN {
+    background: linear-gradient(
+        45deg,
+        rgb(255, 255, 255) 10%,
+        rgb(209, 20, 56) 10%, 
+        rgb(209, 20, 56) 90%, 
+        rgb(255, 255, 255) 90%
+    );
+}
+#CHN {
+    background: linear-gradient(
+        45deg,
+        rgb(255, 255, 8) 10%,
+        rgb(239, 35, 44) 10%, 
+        rgb(239, 35, 44) 90%, 
+        rgb(255, 255, 8) 90%
+    );
+}
+#HAI {
+    background: linear-gradient(
+        45deg,
+        rgb(199, 15, 49) 10%,
+        rgb(250, 250, 250) 10%, 
+        rgb(250, 250, 250) 90%, 
+        rgb(0, 30, 151) 90%
+    );
+    color: rgb(199, 15, 49);
+}
+
+/*Group E Team Colors*/
+#USA {
+    background: linear-gradient(
+        45deg,
+        rgb(169, 32, 49) 10%,
+        rgb(57, 56, 104) 10%, 
+        rgb(57, 56, 104) 90%, 
+        rgb(169, 32, 49) 90%
+    );
+}
+#VIE {
+    background: linear-gradient(
+        45deg,
+        rgb(255, 211, 0) 10%,
+        rgb(220, 7, 46) 10%, 
+        rgb(220, 7, 46) 90%, 
+        rgb(255, 211, 0) 90%
+    );
+}
+#NED {
+    background: linear-gradient(
+        45deg,
+        rgb(18, 107, 242) 10%,
+        rgb(242, 145, 0) 10%, 
+        rgb(242, 145, 0) 90%, 
+        rgb(18, 107, 242) 90%
+    );
+    background-color: rgb(24, 131, 0);
+}
+#POR {
+    background: linear-gradient(
+        45deg,
+        rgb(0, 97, 0) 10%,
+        rgb(242, 0 ,0) 10%, 
+        rgb(242, 0 ,0) 90%, 
+        rgb(0, 97, 0) 90%
+    );
+}
+
+/*Group F Team Colors*/
+#FRA {
+    background: linear-gradient(
+        45deg,
+        rgb(22, 79, 132) 10%,
+        rgb(30, 45, 73) 10%, 
+        rgb(30, 45, 73) 90%, 
+        rgb(224, 39, 53) 90%
+    );
+}
+#JAM {
+    background: linear-gradient(
+        45deg,
+        rgb(255, 186, 35) 10%,
+        rgb(8, 123, 79) 10%, 
+        rgb(8, 123, 79) 90%, 
+        rgb(255, 186, 35) 90%
+    );
+}
+#BRA {
+    background: linear-gradient(
+        45deg,
+        rgb(8, 158, 64) 10%,
+        rgb(254, 224, 8) 10%, 
+        rgb(254, 224, 8) 90%, 
+        rgb(8, 158, 64) 90%
+    );
+    background-color: rgb(24, 131, 0);
+}
+#PAN {
+    background: linear-gradient(
+        45deg,
+        rgb(207, 17, 25) 10%,
+        rgb(242, 242, 242) 10%, 
+        rgb(242, 242, 242) 90%, 
+        rgb(7, 33, 83) 90%
+    );
+    color: rgb(207, 17, 25);
+}
+
+/*Group G Team Colors*/
+#SWE {
+    background: linear-gradient(
+        45deg,
+        rgb(0, 71, 128) 10%,
+        rgb(242, 195, 0) 10%, 
+        rgb(242, 195, 0) 90%, 
+        rgb(0, 71, 128) 90%
+    );
+}
+#RSA {
+    background: linear-gradient(
+        45deg,
+        rgb(0, 114, 71) 10%,
+        rgb(214, 58, 49) 10%, 
+        rgb(214, 58, 49) 90%, 
+        rgb(227, 184, 22) 90%
+    );
+}
+#ITA {
+    background: linear-gradient(
+        45deg,
+        rgb(12, 184, 79) 10%,
+        rgb(9, 108, 177) 10%, 
+        rgb(9, 108, 177) 90%, 
+        rgb(1255, 16, 51) 90%
+    );
+}
+#ARG {
+    background: linear-gradient(
+        45deg,
+        rgb(255, 255, 255) 10%,
+        rgb(116, 172, 223) 10%, 
+        rgb(116, 172, 223) 90%, 
+        rgb(255, 255, 255) 90%
+    );
+}
+
+/*Group H Team Colors*/
+#GER {
+    background: linear-gradient(
+        45deg,
+        rgb(8, 8, 8) 10%,
+        rgb(222, 8, 8) 10%, 
+        rgb(222, 8, 8) 90%, 
+        rgb(255, 208, 8) 90%
+    );
+}
+#MAR {
+    background: linear-gradient(
+        45deg,
+        rgb(8, 103, 57) 10%,
+        rgb(195, 46, 52) 10%, 
+        rgb(195, 46, 52) 90%, 
+        rgb(8, 103, 57) 90%
+    );
+}
+#COL {
+    background: linear-gradient(
+        45deg,
+        rgb(0, 46, 128) 10%,
+        rgb(242, 195, 0) 10%, 
+        rgb(242, 195, 0) 90%, 
+        rgb(190, 15, 44) 90%
+    );
+}
+#KOR {
+    background: linear-gradient(
+        45deg,
+        rgb(207, 53, 64) 10%,
+        rgb(255, 255, 255) 10%, 
+        rgb(255, 255, 255) 90%, 
+        rgb(23, 105, 207) 90%
+    );
+    color: rgb(8, 8, 8);
+}
+
+.knockout {
+    background-color: rgba(220, 220, 220, 1);
+    border-color: rgba(210, 210, 210, 1);
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 5px 5px 0px rgba(25, 25, 25, .5);
+    border-radius: 15px;
+    padding: 5px;
+    margin: auto 5px auto 5px;
+    text-align: center;
+}
+#r16-left {
+    height: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 25%);
+}
+#r16-right {
+    height: 100%;
+    grid-column: 9 / 10;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 25%);
+}
+
+
+#quarters-left {
+    height: 100%;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 50%);
+}
+#quarters-right {
+    height: 100%;
+    grid-column: 8 / 9;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 50%);
+}
+
+
+#semis-left {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    display: grid;
+}
+#semis-right {
+    grid-column: 7 / 8;
+    grid-row: 1 / 2;
+    display: grid;
+}
+
+
+#finalCol {
+    height: 100%;
+    grid-column: 5 / 7;
+    grid-row: 1 / 2; 
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 25%);
+}
+#winner {
+    grid-row: 1 / 2;
+}
+#final {
+    grid-row: 2 / 4;
+}
+#thirdplace {
+    grid-row: 4 / 5;
+}
+
+#finalScore {
+    display: grid;
+    padding: 5px auto 5px auto;
+    margin: 10px
+}
+
+
+/*Test styles*/
+.list-item-hover {
+    box-shadow: 0 0 5px rgb(0,0,0);
+}
+.list-item-out {
+    background: rgba(150, 150, 150, .5) !important;
+    color: rgb(200, 200, 200) !important;
+    text-decoration: line-through !important;
+}

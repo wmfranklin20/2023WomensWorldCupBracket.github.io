@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <title>2023 Women's World Cup Bracket Challenge.</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <span id="header">2023 P&W Women's World Cup Bracket Challenge</span>
+        </div>
+        <div id="descr-text">
+            <span id="descr-text">
+                Welcome to the 2023 PW Bracket Challenge! Below is an interactive bracket for you to set up your picks. 
+                Please start by first dragging the teams in each group into your predicted order, <em>remember that only the top two teams advance from each group.</em>
+                After selecting your group stage advancers, start selecting the teams you believe will advance from each knockout stage all the way up to the Semi-Finals.
+                Lastly, select the teams you believe will advance to the final, noting that the losers of the Semi's will move to the 3rd Place game.  Select your winner, third place winner and input your predicted Final score and your bracket is done!
+                Please take a screenshot of your bracket and send to me with your name!
+            </span>
+        </div>
+        <div id="userName">
+            <span>Name:</span>
+            <input>
+        </div>
+        <div id="bracket">
+            <div id="group-stage-left" class="bracket-column">
+                <div id="groupA" class="group sortable">
+                    <span>Group A</span>
+                    <ul id="groupATable" class="grouptable">
+                        <li draggable="true" id="NZL" class="groupTableTeam">NZL</li>
+                        <li draggable="true" id="NOR" class="groupTableTeam">NOR</li>
+                        <li draggable="true" id="PHI" class="groupTableTeam">PHI</li>
+                        <li draggable="true" id="SUI" class="groupTableTeam">SUI</li>
+                    </ul>
+                </div>
+                <div id="groupC" class="group sortable">
+                    <span>Group C</span>
+                    <ul id="groupCTable" class="grouptable">
+                        <li draggable="true" id="ESP" class="groupTableTeam">ESP</li>
+                        <li draggable="true" id="CRC" class="groupTableTeam">CRC</li>
+                        <li draggable="true" id="ZAM" class="groupTableTeam">ZAM</li>
+                        <li draggable="true" id="JPN" class="groupTableTeam">JPN</li>
+                    </ul>
+                </div>
+                <div id="groupE" class="group">
+                    <span>Group E</span>
+                    <ul id="groupETable" class="grouptable">
+                        <li draggable="true" id="USA" class="groupTableTeam">USA</li>
+                        <li draggable="true" id="VIE" class="groupTableTeam">VIE</li>
+                        <li draggable="true" id="NED" class="groupTableTeam">NED</li>
+                        <li draggable="true" id="POR" class="groupTableTeam">POR</li>
+                    </ul>
+                </div>
+                <div id="groupG" class="group">
+                    <span>Group G</span>
+                    <ul id="groupGTable" class="grouptable">
+                        <li draggable="true" id="SWE" class="groupTableTeam">SWE</li>
+                        <li draggable="true" id="RSA" class="groupTableTeam">RSA</li>
+                        <li draggable="true" id="ITA" class="groupTableTeam">ITA</li>
+                        <li draggable="true" id="ARG" class="groupTableTeam">ARG</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="r16-left" class="bracket-column">
+                <div id="r16-1" class="knockout">
+                    <span>Rof16 - 1</span>
+                    <ul id="r16One">
+                        <li>A1</li>
+                        <li>C2</li>
+                    </ul>
+                </div>
+                <div id="r16-3" class="knockout">
+                    <span>Rof16 - 3</span>
+                    <ul id="r16Three">
+                        <li>E1</li>
+                        <li>G2</li>
+                    </ul>
+                </div>
+                <div id="r16-5" class="knockout">
+                    <span>Rof16 - 5</span>
+                    <ul id="r16Five">
+                        <li>C1</li>
+                        <li>A2</li>
+                    </ul>
+                </div>
+                <div id="r16-7" class="knockout">
+                    <span>Rof16 - 7</span>
+                    <ul id="r16Seven">
+                        <li>G1</li>
+                        <li>E2</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quarters-left" class="bracket-column">
+                <div id="q-1" class="knockout">
+                    <span>Quarter-Finals - 1</span>
+                    <ul id="quartOne">
+                        <li id="qOne">A1/C2</li>
+                        <li id="qTwo">E1/G2</li>
+                    </ul>
+                </div>
+                <div id="q-2" class="knockout">
+                    <span>Quarter-Finals - 3</span>
+                    <ul id="quartTwo">
+                        <li id="qThree">C1/A2</li>
+                        <li id="qFour">G1/E2</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="semis-left" class="bracket-column">
+                <div id="s-1" class="knockout">
+                    <span>Semi-Finals - 1</span>
+                    <ul id="semiOne">
+                        <li id="sOne">A1/C2/E1/G2</li>
+                        <li id="sTwo">C1/A2/G1/E2</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="finalCol" class="bracket-column">
+                <div id="winner" class="knockout">
+                    <span>Winner</span>
+                    <ul>
+                        <li id="winningTeam">Winning Team.</li>
+                    </ul>
+                    <span>Final Score</span>
+                    <div id="finalScore">
+                        <input>
+                        <span>-</span>
+                        <input>
+                    </div>
+                </div>
+                <div id="final" class="knockout">
+                    <span>Final</span>
+                    <ul id="finalMatch">
+                        <li id="fOne">A1/C2/E1/G2</li>
+                        <li id="fTwo">C1/A2/G1/E2</li>
+                    </ul>
+                </div>
+                <div id="thirdplace" class="knockout">
+                    <span>Third-Place</span>
+                    <ul id="thirdMatch">
+                        <li id="thirdOne">A1/C2/E1/G2</li>
+                        <li id="thirdTwo">C1/A2/G1/E2</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="semis-right" class="bracket-column">
+                <div id="s-1" class="knockout">
+                    <span>Semi-Finals - 2</span>
+                    <ul id="semiTwo">
+                        <li id="sThree">B1/D2/F1/H2</li>
+                        <li id="sFour">D1/B2/H1/F2</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quarters-right" class="bracket-column">
+                <div id="q-3" class="knockout">
+                    <span>Quarter-Finals - 2</span>
+                    <ul id="quartThree">
+                        <li id="qFive">B1/D2</li>
+                        <li id="qSix">F1/H2</li>
+                    </ul>
+                </div>
+                <div id="q-4" class="knockout">
+                    <span>Quarter-Finals - 4</span>
+                    <ul id="quartFour">
+                        <li id="qSeven">D1/B2</li>
+                        <li id="qEight">H1/F2</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="r16-right" class="bracket-column">
+                <div id="r16-2" class="knockout">
+                    <span>Rof16 - 2</span>
+                    <ul id="r16Two">
+                        <li>B1</li>
+                        <li>D2</li>
+                    </ul>
+                </div>
+                <div id="r16-4" class="knockout">
+                    <span>Rof16 - 4</span>
+                    <ul id="r16Four">
+                        <li>F1</li>
+                        <li>H2</li>
+                    </ul>
+                </div>
+                <div id="r16-6" class="knockout">
+                    <span>Rof16 - 6</span>
+                    <ul id="r16Six">
+                        <li>D1</li>
+                        <li>B2</li>
+                    </ul>
+                </div>
+                <div id="r16-8" class="knockout">
+                    <span>Rof16 - 8</span>
+                    <ul id="r16Eight">
+                        <li>H1</li>
+                        <li>F2</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="group-stage-right" class="bracket-column">
+                <div id="groupB" class="group">
+                    <span>Group B</span>
+                    <ul id="groupBTable" class="grouptable">
+                        <li draggable="true" id="AUS" class="groupTableTeam">AUS</li>
+                        <li draggable="true" id="IRL" class="groupTableTeam">IRL</li>
+                        <li draggable="true" id="NGA" class="groupTableTeam">NGA</li>
+                        <li draggable="true" id="CAN" class="groupTableTeam">CAN</li>
+                    </ul>
+                </div>
+                <div id="groupD" class="group">
+                    <span>Group D</span>
+                    <ul id="groupDTable" class="grouptable">
+                        <li draggable="true" id="ENG" class="groupTableTeam">ENG</li>
+                        <li draggable="true" id="DEN" class="groupTableTeam">DEN</li>
+                        <li draggable="true" id="CHN" class="groupTableTeam">CHN</li>
+                        <li draggable="true" id="HAI" class="groupTableTeam">HAI</li>
+                    </ul>
+                </div>
+                <div id="groupF" class="group">
+                    <span>Group F</span>
+                    <ul id="groupFTable" class="grouptable">
+                        <li draggable="true" id="FRA" class="groupTableTeam">FRA</li>
+                        <li draggable="true" id="JAM" class="groupTableTeam">JAM</li>
+                        <li draggable="true" id="BRA" class="groupTableTeam">BRA</li>
+                        <li draggable="true" id="PAN" class="groupTableTeam">PAN</li>
+                    </ul>
+                </div>
+
+                <div id="groupH" class="group">
+                    <span>Group H</span>
+                    <ul id="groupHTable" class="grouptable">
+                        <li draggable="true" id="GER" class="groupTableTeam">GER</li>
+                        <li draggable="true" id="MAR" class="groupTableTeam">MAR</li>
+                        <li draggable="true" id="COL" class="groupTableTeam">COL</li>
+                        <li draggable="true" id="KOR" class="groupTableTeam">KOR</ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
